@@ -1,0 +1,10 @@
+instances: 1
+memory: 1G
+applications:
+  - name: service-discovery-producer
+    path: target/service-discovery-producer-0.0.1-SNAPSHOT.jar
+    random-route: true
+    services:
+      - service-registry
+    env:
+      SPRING_PROFILES_ACTIVE: cloud

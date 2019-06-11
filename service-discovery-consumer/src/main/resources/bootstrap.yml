@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-discovery-consumer
+  cloud:
+    services:
+      registrationMethod: route
+
+server:
+  port: 8082
+
+producer:
+  ribbon:
+    ServerListRefreshInterval: 5000
+ribbon:
+  IsSecure: false

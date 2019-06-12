@@ -3,4 +3,6 @@ spring:
     name: service-discovery-producer
   cloud:
     services:
-      registrationMethod: route
+      registrationMethod: direct
+ # for apps.internal(Conatiner to container) use registrationMethod: direct
+ # default routing registrationMethod: route
